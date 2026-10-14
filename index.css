@@ -1,0 +1,508 @@
+
+/* ==========================================
+   VEHICLE WORLD - HOMEPAGE CSS
+   ========================================== */
+
+/* GENERAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   NAVIGATION BAR
+   ========================================== */
+
+.navbar {
+    background-color: #28c868;
+    padding: 18px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 9px 12px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: white;
+    color: #168744;
+}
+
+/* ==========================================
+   HERO SECTION
+   ========================================== */
+
+.hero {
+    min-height: 490px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #dff4ff, #d1fae5);
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero-label {
+    display: inline-block;
+    background-color: white;
+    color: #168744;
+    padding: 7px 16px;
+    border-radius: 20px;
+    font-size: 13px !important;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 15px !important;
+}
+
+.hero h1 {
+    font-size: 55px;
+    color: #2878c8;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 21px;
+    max-width: 700px;
+    margin: 0 auto 25px;
+    line-height: 1.7;
+}
+
+.vehicles {
+    font-size: 62px;
+    margin-bottom: 25px;
+    letter-spacing: 8px;
+}
+
+/* START LEARNING BUTTON */
+.start-button {
+    background-color: #ff9f1c;
+    color: white;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-size: 19px;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(240, 124, 0, 0.2);
+}
+
+.start-button:hover {
+    background-color: #f07c00;
+    transform: translateY(-3px);
+}
+
+/* ==========================================
+   MAIN CONTENT
+   ========================================== */
+
+main {
+    width: 100%;
+}
+
+/* ==========================================
+   INTRODUCTION SECTION
+   ========================================== */
+
+.intro {
+    padding: 55px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.intro h2 {
+    font-size: 32px;
+    color: #2878c8;
+    margin-bottom: 18px;
+}
+
+.intro p {
+    font-size: 18px;
+    max-width: 760px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+/* ==========================================
+   ABOUT PREVIEW SECTION
+   ========================================== */
+
+.about-preview {
+    padding: 55px 20px;
+    background-color: #eafaf0;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 780px;
+    margin: auto;
+}
+
+.about-content h2 {
+    font-size: 32px;
+    color: #168744;
+    margin-bottom: 18px;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.about-button {
+    display: inline-block;
+    background-color: #28c868;
+    color: white;
+    text-decoration: none;
+    padding: 12px 27px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.about-button:hover {
+    background-color: #168744;
+    transform: translateY(-3px);
+}
+
+/* ==========================================
+   VEHICLE CATEGORY SECTION
+   ========================================== */
+
+.categories {
+    padding: 60px 30px;
+    text-align: center;
+    background-color: #f0f8ff;
+}
+
+.categories h2 {
+    font-size: 34px;
+    color: #2878c8;
+    margin-bottom: 12px;
+}
+
+.section-description {
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+/* CARD CONTAINER */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+    max-width: 1150px;
+    margin: 0 auto 35px;
+}
+
+/* INDIVIDUAL CARD */
+.card {
+    background-color: white;
+    padding: 28px 18px;
+    border: 2px solid #dbeafe;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+    cursor: pointer;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 22px rgba(40, 120, 200, 0.15);
+}
+
+.card:focus-visible {
+    outline: 3px solid #ff9f1c;
+    outline-offset: 4px;
+}
+
+/* VEHICLE EMOJI */
+.card .emoji {
+    font-size: 58px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .emoji {
+    transform: scale(1.1);
+}
+
+/* CARD HEADING */
+.card h3 {
+    color: #2878c8;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+/* CARD DESCRIPTION */
+.card p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* FUN FACT INSIDE CARD */
+.card .fun-fact {
+    background-color: #fff4d6;
+    color: #855400;
+    border-radius: 12px;
+    padding: 12px;
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* IMPORTANT: Hidden facts stay hidden */
+.card .fun-fact[hidden] {
+    display: none;
+}
+
+/* EXPLORE BUTTON */
+.explore-button {
+    display: inline-block;
+    background-color: #2878c8;
+    color: white;
+    text-decoration: none;
+    padding: 13px 28px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #185da0;
+    transform: translateY(-3px);
+}
+
+/* ==========================================
+   QUIZ SECTION
+   ========================================== */
+
+.quiz-section {
+    background-color: #fff4d6;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.quiz-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.quiz-section h2 {
+    font-size: 34px;
+    color: #e88900;
+    margin-bottom: 15px;
+}
+
+.quiz-section p {
+    font-size: 18px;
+    margin-bottom: 28px;
+}
+
+.quiz-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* QUIZ BUTTONS */
+.quiz-button {
+    display: inline-block;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 25px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.quiz-button:hover {
+    background-color: #388e3c;
+    transform: translateY(-3px);
+}
+
+.quiz-button.secondary {
+    background-color: #2878c8;
+}
+
+.quiz-button.secondary:hover {
+    background-color: #185da0;
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+
+footer {
+    background-color: #2878c8;
+    color: white;
+    text-align: center;
+    padding: 24px 15px;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+/* ==========================================
+   TABLET RESPONSIVE DESIGN
+   ========================================== */
+
+@media (max-width: 1000px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 750px;
+    }
+}
+
+/* ==========================================
+   MOBILE RESPONSIVE DESIGN
+   ========================================== */
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 15px 12px;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+        padding: 7px 9px;
+    }
+
+    .hero {
+        min-height: 420px;
+        padding: 45px 16px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .vehicles {
+        font-size: 43px;
+        letter-spacing: 3px;
+    }
+
+    .start-button {
+        font-size: 17px;
+        padding: 13px 27px;
+    }
+
+    .intro,
+    .about-preview {
+        padding: 40px 18px;
+    }
+
+    .intro h2,
+    .about-content h2,
+    .categories h2,
+    .quiz-section h2 {
+        font-size: 27px;
+    }
+
+    .intro p,
+    .about-content p,
+    .quiz-section p {
+        font-size: 16px;
+    }
+
+    .categories {
+        padding: 45px 15px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+        gap: 18px;
+    }
+
+    .card {
+        padding: 25px 18px;
+    }
+
+    .quiz-section {
+        padding: 45px 18px;
+    }
+
+    .quiz-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quiz-button {
+        width: 100%;
+        max-width: 280px;
+    }
+}

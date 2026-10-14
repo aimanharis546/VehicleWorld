@@ -1,0 +1,430 @@
+
+/* ==========================================
+   VEHICLE WORLD - ABOUT PAGE CSS
+   ========================================== */
+
+/* GENERAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   NAVIGATION BAR
+   ========================================== */
+
+.navbar {
+    background-color: #28c868;
+    padding: 18px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 9px 12px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: white;
+    color: #168744;
+}
+
+/* ==========================================
+   ABOUT HEADER
+   ========================================== */
+
+.about-header {
+    min-height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 55px 20px;
+    background: linear-gradient(135deg, #dff4ff, #d1fae5);
+}
+
+.vehicles {
+    font-size: 58px;
+    margin-bottom: 15px;
+    letter-spacing: 5px;
+}
+
+.header-label {
+    display: inline-block;
+    background-color: white;
+    color: #168744;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.about-header h1 {
+    font-size: 45px;
+    color: #2878c8;
+    margin-bottom: 18px;
+    line-height: 1.25;
+}
+
+.header-description {
+    font-size: 19px;
+    max-width: 700px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* START BUTTON */
+.start-button {
+    background-color: #ff9f1c;
+    color: white;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.start-button:hover {
+    background-color: #f07c00;
+    transform: translateY(-3px);
+}
+
+/* ==========================================
+   MAIN CONTENT
+   ========================================== */
+
+main {
+    width: 100%;
+}
+
+/* ==========================================
+   ABOUT INFORMATION SECTION
+   ========================================== */
+
+.about-section {
+    padding: 60px 25px;
+    text-align: center;
+    background-color: white;
+}
+
+.about-section h2 {
+    font-size: 33px;
+    color: #2878c8;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    font-size: 17px;
+    margin-bottom: 35px;
+}
+
+/* INFORMATION CARDS */
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1050px;
+    margin: auto;
+}
+
+.about-card {
+    background-color: #f8fbff;
+    padding: 30px 22px;
+    border: 2px solid #dbeafe;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.about-card:hover,
+.about-card.card-hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 22px rgba(40, 120, 200, 0.15);
+}
+
+.about-card .emoji {
+    font-size: 55px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.about-card:hover .emoji,
+.about-card.card-hover .emoji {
+    transform: scale(1.1);
+}
+
+.about-card h3 {
+    color: #2878c8;
+    margin-bottom: 12px;
+    font-size: 21px;
+}
+
+.about-card p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* ==========================================
+   OUR GOAL SECTION
+   ========================================== */
+
+.goal-section {
+    background-color: #fff4d6;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.goal-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.goal-emoji {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.goal-section h2 {
+    font-size: 33px;
+    color: #e88900;
+    margin-bottom: 15px;
+}
+
+.goal-section p {
+    font-size: 18px;
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+/* ==========================================
+   EXPLORE SECTION
+   ========================================== */
+
+.explore-section {
+    background-color: #eafaf0;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.explore-section h2 {
+    font-size: 32px;
+    color: #168744;
+    margin-bottom: 12px;
+}
+
+.explore-section p {
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.explore-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.explore-button {
+    display: inline-block;
+    background-color: #28c868;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #168744;
+    transform: translateY(-3px);
+}
+
+.explore-button.quiz-link {
+    background-color: #ff9f1c;
+}
+
+.explore-button.quiz-link:hover {
+    background-color: #f07c00;
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+
+footer {
+    background-color: #2878c8;
+    color: white;
+    text-align: center;
+    padding: 24px 15px;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+footer .copyright {
+    font-size: 13px;
+    margin-top: 5px;
+    opacity: 0.9;
+}
+
+/* ==========================================
+   TABLET RESPONSIVE DESIGN
+   ========================================== */
+
+@media (max-width: 900px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+
+    .about-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 750px;
+    }
+
+    .about-card:last-child {
+        grid-column: 1 / -1;
+        max-width: 400px;
+        width: 100%;
+        justify-self: center;
+    }
+}
+
+/* ==========================================
+   MOBILE RESPONSIVE DESIGN
+   ========================================== */
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 15px 12px;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .logo {
+        font-size: 23px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+        padding: 7px 9px;
+    }
+
+    .about-header {
+        min-height: 400px;
+        padding: 40px 16px;
+    }
+
+    .vehicles {
+        font-size: 40px;
+        letter-spacing: 1px;
+    }
+
+    .about-header h1 {
+        font-size: 34px;
+    }
+
+    .header-description {
+        font-size: 16px;
+    }
+
+    .about-section {
+        padding: 40px 15px;
+    }
+
+    .about-section h2,
+    .goal-section h2,
+    .explore-section h2 {
+        font-size: 27px;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+        max-width: 360px;
+    }
+
+    .about-card:last-child {
+        grid-column: auto;
+        max-width: none;
+    }
+
+    .about-card {
+        padding: 25px 18px;
+    }
+
+    .goal-section,
+    .explore-section {
+        padding: 40px 18px;
+    }
+
+    .goal-section p,
+    .explore-section p {
+        font-size: 16px;
+    }
+
+    .explore-buttons {
+        flex-direction: column;
+    }
+
+    .explore-button {
+        width: 100%;
+        max-width: 280px;
+    }
+}

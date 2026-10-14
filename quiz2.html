@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vehicle World - Quiz 2</title>
+
+    <link rel="stylesheet" href="quiz2.css">
+    <script src="quiz2.js" defer></script>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="logo">🚗 Vehicle World</div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="learning1.html">Learning</a>
+            <a href="quiz1.html">Quiz</a>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <section class="header">
+        <div class="big-icon">🚢 ✈️ 🚆</div>
+
+        <h1>Vehicle Quiz - Part 2</h1>
+
+        <p>Let's test what you learned about more vehicles!</p>
+        <p>Choose the correct answer for each question.</p>
+    </section>
+
+    <!-- QUIZ QUESTIONS -->
+    <main class="quiz-container">
+
+        <!-- QUESTION 1 -->
+        <div class="question">
+            <h2>1. Which vehicle travels on water?</h2>
+
+            <label class="option">
+                <input type="radio" name="Q1" id="Q1A" value="true">
+                🚤 Boat
+            </label>
+
+            <label class="option">
+                <input type="radio" name="Q1" id="Q1B" value="false">
+                🚗 Car
+            </label>
+
+            <label class="option">
+                <input type="radio" name="Q1" id="Q1C" value="false">
+                🚆 Train
+            </label>
+        </div>
+
+        <!-- QUESTION 2 -->
+        <div class="question">
+            <h2>2. Which vehicle can travel under water?</h2>
+
+            <label class="option">
+                <input type="radio" name="Q2" id="Q2A" value="false">
+                ✈️ Airplane
+            </label>
+
+            <label class="option">
+                <input type="radio" name="Q2" id="Q2B" value="true">
+                🤿 Submarine
+            </label>
+
+            <label class="option">
+                <input type="radio" name="Q2" id="Q2C" value="false">
+                🚌 Bus
+            </label>
+        </div>
+
+        <!-- QUESTION 3 -->
+        <div class="question">
+            <h2>3. Which vehicle flies in the sky?</h2>
+
+            <label class="option">
+                <input type="radio" name="Q3" id="Q3A" value="false">
+                🚢 Ship
+            </label>
+
+            <label class="option">
+                <input type="radio" name="Q3" id="Q3B" value="true">
+                ✈️ Airplane
+            </label>
+
+            <label class="option">
+                <input type="radio" name="Q3" id="Q3C" value="false">
+                🚗 Car
+            </label>
+        </div>
+
+        <!-- QUESTION 4 -->
+        <div class="question">
+            <h2>4. Which vehicle can take off and land vertically?</h2>
+
+            <label class="option">
+                <input type="radio" name="Q4" id="Q4A" value="false">
+                🚆 Train
+            </label>
+
+            <label class="option">
+                <input type="radio" name="Q4" id="Q4B" value="false">
+                🚢 Ship
+            </label>
+
+            <label class="option">
+                <input type="radio" name="Q4" id="Q4C" value="true">
+                🚁 Helicopter
+            </label>
+        </div>
+
+        <!-- QUESTION 5 -->
+        <div class="question">
+            <h2>5. Which vehicle travels on railway tracks?</h2>
+
+            <label class="option">
+                <input type="radio" name="Q5" id="Q5A" value="true">
+                🚆 Train
+            </label>
+
+            <label class="option">
+                <input type="radio" name="Q5" id="Q5B" value="false">
+                🚤 Boat
+            </label>
+
+            <label class="option">
+                <input type="radio" name="Q5" id="Q5C" value="false">
+                ✈️ Airplane
+            </label>
+        </div>
+
+        <!-- RESULT -->
+        <div id="result" aria-live="polite"></div>
+
+        <!-- BUTTONS -->
+        <div class="button-area">
+            <button type="button" class="check-button" onclick="CheckAnswer()">
+                ✅ Check Answer
+            </button>
+
+            <button type="button" class="finish-button" onclick="finishQuiz()">
+                🏆 Finish Quiz
+            </button>
+
+            <button type="button" class="reset-button" onclick="TakeQuizAgain()">
+                🔄 Take Quiz Again
+            </button>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>🚗 Vehicle World | Keep Learning! 🌟</p>
+    </footer>
+
+</body>
+</html>
